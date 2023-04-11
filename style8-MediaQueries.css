@@ -1,0 +1,205 @@
+
+@media (max-width: 35rem) {
+    .primary-navigation {
+        --underline-gap: .5rem;
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+        list-style: none;
+        padding: min(20rem, 15vh) 2rem;
+        margin: 0;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 500ms ease-in-out;
+    }
+    
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0);
+    }
+    
+    .primary-navigation.underline-indicators > .active {
+       border: 0;
+    }
+    
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 2000;
+        right: 1rem;
+        top: 2rem;
+        background: transparent;
+        background-image: url(./assets/shared/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1.5rem;
+        aspect-ratio: 1;
+        border: 0;
+    }
+    
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url(./assets/shared/icon-close.svg);
+    }
+    
+    .mobile-nav-toggle:focus-visible {
+        outline: 5px solid white;
+        outline-offset: 5px;
+    }
+    
+}
+
+@media (min-width: 35rem) and (max-width: 44.999rem) {
+    .primary-navigation a > span {
+        display: none;
+    }
+}
+
+
+@media (min-width: 35rem) {
+    :root {
+        --fs-800: 5rem;
+        --fs-700: 2.5rem;
+        --fs-600: 1.5rem;
+        --fs-500: 1.25rem;
+        --fs-400: 1rem;
+    }
+
+    .primary-navigation {
+        padding-inline: clamp(3rem, 7vw, 7rem);
+    }
+
+    .home {
+        background-position: center center;
+        background-image: url(./assets/home/background-home-tablet.jpg);
+    }
+
+    .destination {
+        background-position: center center;
+        background-image: url(./assets/destination/background-destination-tablet.jpg);
+    }
+
+    .crew {
+        background-position: center center;
+        background-image: url(./assets/crew/background-crew-tablet.jpg);
+    }
+
+    .numbered-title {
+        justify-self: start;
+        margin-top: 2rem;
+    }
+    
+    .destination-meta {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .grid-container--crew {
+        padding-bottom: 0;
+        grid-template-areas: 
+            'title'
+            'content'
+            'tabs'
+            'image';
+    }
+}
+
+
+
+
+
+@media (min-width: 45rem) {
+    :root {
+        /* font-sizes */
+        --fs-800: 6.25rem;
+        --fs-700: 3.5rem;
+        --fs-600: 2rem;
+        --fs-500: 1.75rem;
+        --fs-400: 1.125rem;
+    }
+    
+     .primary-header::after {
+         content: '';
+         display: block;
+         position: relative;
+         height: 1px;
+         width: 100%;
+         margin-right: -2.5rem;
+         background: hsl( var(--clr-white) / .25);
+         order: 1;
+     }
+     
+    nav {
+        order: 2;
+    }
+    
+    .primary-navigation {
+        margin-block: 2rem;
+    }
+
+    .home {
+        background-image: url(./assets/home/background-home-desktop.jpg);
+    }
+
+    .destination {
+        background-image: url(./assets/destination/background-destination-desktop.jpg);
+    }
+
+    .crew {
+        background-image: url(./assets/crew/background-crew-desktop.jpg);
+    }
+
+    .technology {
+        background-image: url(./assets/technology/background-technology-desktop.jpg);
+    }
+
+    .grid-container {
+        text-align: left;
+        column-gap: var(--container-gap, 2rem);
+        grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem, 1fr);
+    }
+    
+    .grid-container--home {
+        padding-bottom: max(6rem, 20vh);
+        align-items: end;
+    }
+    
+    .grid-container--home > *:first-child {
+        grid-column: 2;
+    }
+
+    .grid-container--home > *:last-child {
+        grid-column: 3;
+    }
+    
+    .grid-container--destination {
+        justify-items: start;
+        align-content: start;
+        grid-template-areas: 
+            '. title title .'
+            '. image tabs .'
+            '. image content .';
+    }
+    
+    .grid-container--destination > picture {
+        max-width: 90%;
+    }
+     
+    .destination-meta {
+        --gap: min(6vw, 6rem);
+        justify-content: start;
+    }
+    
+    .grid-container--crew {
+        grid-template-columns: minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(1rem, 1fr);
+        justify-items: start;
+        grid-template-areas: 
+            '. title title .'
+            '. content image .'
+            '. tabs image .';
+    }
+    
+    .grid-container--crew > picture {
+        grid-column: span 2;
+        align-self: end; 
+        max-width: 90%;
+    }
+}

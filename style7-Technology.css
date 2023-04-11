@@ -1,0 +1,59 @@
+
+/* technology */
+.technology {
+    background-image: url(./assets/technology/background-technology-mobile.jpg);
+}
+
+.grid-container--technology {
+    --flow-space: 2rem;
+    padding-inline: 0;
+    grid-template-areas: 
+        'title'
+        'image'
+        'tabs'
+        'content';
+}
+
+.grid-container--technology > picture {
+    grid-area: image;
+    border-bottom: 1px solid hsl( var(--clr-white) / .1);
+    /* fix right side gap */
+    margin-right: -0.3rem;
+}
+
+.grid-container--technology > .number-indicators {
+    grid-area: tabs;
+}
+
+.grid-container--crew > .technology-details {
+    grid-area: content;
+    padding-inline: 1rem;
+}
+
+.technology-details p.name {
+    letter-spacing: 1.5px;
+    color:hsl( var(--clr-white))
+  }
+
+.number-indicators > * {
+    cursor: pointer;
+    width: 2.6rem;
+    aspect-ratio: 1;
+    background: transparent;
+    border: 1.4px solid hsl( var(--clr-white) / .25);
+    border-radius: 50%;
+    padding: .5em;
+    color: hsl(var(--clr-white));
+    
+}
+ 
+.number-indicators > *:hover,
+.number-indicators > *:focus { 
+    background-color: hsl( var(--clr-white) / .5);
+}
+
+.number-indicators > [aria-selected="true"] {
+    color: hsl( var(--clr-dark) );
+    background-color: hsl( var(--clr-white) / 1); 
+    
+}
