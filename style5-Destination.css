@@ -11,11 +11,6 @@
 /* ----------------------------- */
 
 
-.numbered-title {
-    grid-area: title;
-    color: hsl( var(--clr-white));
-}
-
 .tab-list {
     --gap: 2rem;
 }
@@ -28,6 +23,11 @@
         'image'
         'tabs'
         'content';
+}
+
+.numbered-title {
+    grid-area: title;
+    color: hsl( var(--clr-white));
 }
 
 .grid-container--destination > picture {

@@ -4,12 +4,15 @@
 }
 
 .large-button {
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 1.1rem;
     position: relative;
+    bottom: 0;
     z-index: 1;
     display: inline-grid;
     place-items: center;
     padding: 0 2em;
+    
     border-radius: 50%;
     aspect-ratio: 1;
     text-decoration: none;
@@ -48,6 +51,15 @@
 
 .grid-container p:not([class]) {
     max-width: 50ch;
+}
+
+.grid-container--home h1 .name {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.grid-container--home p {
+    margin-bottom: 6rem;
 }
 
 
