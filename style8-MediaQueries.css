@@ -111,7 +111,7 @@
 }
 
 
-
+/************************************ 850px ************************************/
 @media (min-width: 850px) {
     :root {
         /* font-sizes */
@@ -154,8 +154,8 @@
     }
     
     .grid-container--home {
-        padding-bottom: max(6rem, 20vh);
-        align-items: end;
+        max-height: 100%;
+        align-items:end;
     }
     
     .grid-container--home > *:first-child {
@@ -164,6 +164,15 @@
 
     .grid-container--home > *:last-child {
         grid-column: 3;
+        justify-self: right;
+    }
+
+    .grid-container--home p {
+        margin-bottom: 0;
+    }
+
+    .large-button {
+        font-size: 2rem;
     }
     
     .grid-container--destination {
@@ -174,7 +183,6 @@
             '. image tabs .'
             '. image content .';
     }
-
 
     .numbered-title {
         justify-self: start;
@@ -209,14 +217,14 @@
     }
 
     .grid-container--technology {
-        grid-template-columns: minmax(1rem, 1fr) minmax(0, 4rem) minmax(0, 34rem) minmax(0, 23rem) minmax(1rem, 1fr);
+        grid-template-columns: minmax(1rem, 1fr) minmax(0, 6rem) minmax(0, 32rem) minmax(0, 28rem) minmax(1rem, 1fr);
         justify-items: start;
         align-items: start;
         
         grid-template-areas: 
-            '. title title title .'
-            '. tabs content image .'
-            '. tabs content image .';
+            '. title title title'
+            '. tabs content image'
+            '. tabs content image';
     }
 
     .grid-container--technology > .number-indicators {
@@ -224,12 +232,17 @@
         flex-direction: column;
         justify-self: start;
         margin-top: 10rem;
-        width: 4rem;
-        height: 4rem;
+        font-size: 2rem;
+        padding-inline: 2rem;
+
     }
 
     .grid-container--technology > .technology-details {
         margin-top: 10rem;
+    }    
+
+    .paragraph {
+        width: 95%;
     }
     
     .grid-container--technology > picture {
@@ -239,6 +252,7 @@
     }
 }
 
+/********************************************** 1200px *******************************/
 @media (min-width: 1200px) {
     .primary-header::after {
         content: '';
@@ -256,6 +270,12 @@
     .grid-container--technology > .number-indicators {
         width: 6rem;
         height: 6rem;
+    }
+    
+    .number-indicators > * {
+        font-size: 3rem;
+        width: 5rem;
+        height: 5rem;
     }
 }
 
