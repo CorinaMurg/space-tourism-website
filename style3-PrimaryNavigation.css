@@ -12,7 +12,6 @@
 }
 
 .primary-navigation {
-    /* margin: 3rem; */
     --gap: clamp(1.5rem, 5vw, 3.5rem);
     --underline-gap: 2rem;
     list-style: none;
