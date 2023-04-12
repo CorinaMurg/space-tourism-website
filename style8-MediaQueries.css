@@ -150,7 +150,7 @@
     .grid-container {
         text-align: left;
         column-gap: var(--container-gap, 2rem);
-        grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(1rem, 1fr);
+        grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 33rem)) minmax(1rem, 1fr);
     }
     
     .grid-container--home {
@@ -177,7 +177,7 @@
     
     .grid-container--destination {
         justify-items: start;
-        align-content: start;
+        /* align-content: start; */
         grid-template-areas: 
             '. title title .'
             '. image tabs .'
@@ -194,6 +194,16 @@
     .grid-container--destination > picture {
         max-width: 85%;
         align-self: center;
+        justify-self: center;
+        margin-bottom: 3rem;
+    }
+
+    .grid-container--destination > .tab-list {
+        margin-left: 7rem;
+    }
+    .destination-info {
+        margin-left: 7rem;
+        margin-bottom: 3rem
     }
      
     .destination-meta {
@@ -202,7 +212,7 @@
     }
     
     .grid-container--crew {
-        grid-template-columns: minmax(1rem, 1fr) minmax(0, 37rem) minmax(0, 23rem) minmax(1rem, 1fr);
+        grid-template-columns: minmax(0, 1fr) minmax(0, 42.5rem) minmax(0, 23rem) minmax(1rem, 1fr);
         justify-items: start;
         grid-template-areas: 
             '. title title .'
@@ -217,9 +227,10 @@
     }
 
     .grid-container--technology {
-        grid-template-columns: minmax(1rem, 1fr) minmax(0, 6rem) minmax(0, 32rem) minmax(0, 28rem) minmax(1rem, 1fr);
-        justify-items: start;
+        grid-template-columns: minmax(4rem, 1fr) minmax(0, 6rem) minmax(0, 33rem) minmax(0, 25rem) minmax(1rem, 1fr);
+        justify-items: start !important;
         align-items: start;
+       
         
         grid-template-areas: 
             '. title title title'
@@ -230,24 +241,33 @@
     .grid-container--technology > .number-indicators {
         display: flex;
         flex-direction: column;
-        justify-self: start;
         margin-top: 10rem;
-        font-size: 2rem;
-        padding-inline: 2rem;
+        margin-bottom: 1rem;
+    }
 
+    .number-indicators > * {
+        font-size: 3.5rem;
+        width: 5.5rem;
+        height: 5.5rem;
+        padding: 1.2em;
     }
 
     .grid-container--technology > .technology-details {
         margin-top: 10rem;
     }    
 
+
     .paragraph {
-        width: 95%;
+        width: 90%;
+        --flow-space: 2rem;
+        line-height: 1.8;
     }
     
     .grid-container--technology > picture {
         grid-column: span 2;
-        align-self: end; 
+        align-self: center; 
+        margin-bottom: 2rem;
+        justify-self: end;
         max-width: 100%;
     }
 }
@@ -259,7 +279,7 @@
         display: flex;
         align-items: center;
         position: relative;
-        margin-left: clamp(1.5rem, 5vw, 3.5rem);
+        margin-left: 3rem;
         height: 1px;
         width: 100%;
         margin-right: -2.5rem;
@@ -267,15 +287,9 @@
         order: 1;
     }
 
-    .grid-container--technology > .number-indicators {
-        width: 6rem;
-        height: 6rem;
-    }
     
     .number-indicators > * {
-        font-size: 3rem;
-        width: 5rem;
-        height: 5rem;
+        font-size: 2rem;
     }
 }
 

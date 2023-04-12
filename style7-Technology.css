@@ -38,18 +38,18 @@
 .number-indicators > * {
     cursor: pointer;
     
-    font-size: 1.5rem;
-    width: 3rem;
-    height: 3rem;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
     background: transparent;
     border: 1.4px solid hsl( var(--clr-white) / .25);
     border-radius: 50%;
-    padding: .5em;
+    padding: 1em;
     color: hsl(var(--clr-white));
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin-bottom: 1rem;
 }
 
  
