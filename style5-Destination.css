@@ -50,10 +50,10 @@
     color: hsl( var(--clr-white));
 }
 
-.destination-info p {
+/* .destination-info p {
     width: 95%;
     margin-inline: auto;
-}
+} */
 
 .destination-meta {
     flex-direction: column;

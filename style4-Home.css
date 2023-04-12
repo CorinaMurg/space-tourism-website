@@ -55,6 +55,11 @@
 
 .grid-container--home p {
     margin-bottom: 5rem;
+    /* width: 95%;
+    margin-inline: auto; */
+}
+
+article > p {
     width: 95%;
     margin-inline: auto;
 }

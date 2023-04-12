@@ -54,6 +54,14 @@
     }
 }
 
+/************************************ 500px ***********************************/
+@media (min-width: 500px) {
+    article > p {
+        width: 70%;
+    }
+}
+
+
 /************************************ 560px ***********************************/
 @media (min-width: 560px) {
     :root {
@@ -176,7 +184,6 @@
 
     .grid-container--technology > .number-indicators {
         display: flex;
-
     }
 
     .number-indicators > * {

@@ -35,11 +35,11 @@
     color:hsl( var(--clr-white))
 }
 
-.technology-details p {
+/* .technology-details p {
     width: 95%;
     margin-inline: auto;
     hyphens: none;
-}
+} */
 
 .number-indicators > * {
     cursor: pointer;
