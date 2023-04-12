@@ -12,7 +12,9 @@
 
 
 .tab-list {
-    --gap: 2rem;
+    --gap: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -50,6 +52,7 @@
 
 .destination-info p {
     width: 95%;
+    margin-inline: auto;
 }
 
 .destination-meta {
@@ -57,6 +60,7 @@
     border-top: 1px solid hsl( var(--clr-white) / .1);
     padding-top: 2.5rem;
     margin-top: 2.5rem;
+    border-top: 1px solid hsl( var(--clr-white) / .25);
 }
 
 .destination-meta p {

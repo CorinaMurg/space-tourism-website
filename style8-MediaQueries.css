@@ -64,13 +64,17 @@
         --fs-400: 1rem;
     }
 
+    .grid-container {
+        padding-inline: 0;
+    }
+
     .primary-navigation {
         padding-inline: clamp(3rem, 7vw, 7rem);
     }
 
     .numbered-title {
-        /* same padding as logo left margin */
-        margin-left: clamp(1.5rem, 5vw, 3.5rem);
+        /* same as logo margin */
+        margin-inline: clamp(1.5rem, 5vw, 3.5rem);
         justify-self: start;
         margin-top: 2rem;
     }
@@ -80,10 +84,21 @@
         background-image: url(./assets/home/background-home-tablet.jpg);
     }
 
+    .grid-container--home div {
+        margin-top: 4rem;
+    }
+
+    .grid-container--home .name {
+        font-size: 9.375rem;
+        margin-top: 1rem;
+    }
+
+    .grid-container--home p {
+        width: 80%;
+    }
 
     .large-button {
         font-size: 2rem;
-        bottom: -2.5rem;
     }
 
     .destination {
@@ -91,14 +106,45 @@
         background-image: url(./assets/destination/background-destination-tablet.jpg);
     }
 
-    .crew {
-        background-position: center center;
-        background-image: url(./assets/crew/background-crew-tablet.jpg);
+    .grid-container--destination .tab-list {
+        margin-inline: auto;
     }
-    
+
+    .tab-list {
+        --gap: 2.5rem;
+    }
+
+    .grid-container--destination .destination-info {
+        margin-inline: auto;
+    }
+
+    .destination-info > p {
+        width: 75%;
+    }
+
     .destination-meta {
         flex-direction: row;
         justify-content: space-evenly;
+        margin-inline: 12.5%;
+    }
+
+    .destination-meta > div {
+        width: 60%;
+    }
+
+    .destination-meta > p{
+        width: 100%;
+    }
+
+    .grid-container--destination > picture {
+        margin-top: 3rem;
+        width: 42%;
+    }
+
+    /************************* CREW **************************/
+    .crew {
+        background-position: center center;
+        background-image: url(./assets/crew/background-crew-tablet.jpg);
     }
     
     .grid-container--crew {
@@ -109,23 +155,66 @@
             'tabs'
             'image';
     }
+
+    .crew-details h2 {
+        margin-top: 2rem;
+    }
+
+    .crew-details p {
+        margin-inline: auto;
+        width: 60%;
+    }
+
+    .dot-indicators {
+        margin-top: 3rem;
+    }
+
+    /************************* TECHNOLOGY **************************/
+    .technology-details p {
+        width: 60%;
+    }
+
+    .grid-container--technology > .number-indicators {
+        display: flex;
+
+    }
+
+    .number-indicators > * {
+        font-size: 1.4rem;
+        width: 3.75rem;
+        height: 3.75rem;
+        padding: 1.4rem;
+    }
+
 }
 
+/************************************ 700px ***********************************/
+@media (min-width: 700px) {
+    /**** set @560 ***/
+    /* .grid-container--home .name {
+        font-size: 9.375rem;
+    } */
 
-/************************************ 900px ************************************/
-@media (min-width: 900px) {
-    :root {
-        /* font-sizes */
-        --fs-800: 6.25rem;
-        --fs-700: 3.5rem;
-        --fs-600: 2rem;
-        --fs-500: 1.75rem;
-        --fs-400: 1.125rem;
+    .grid-container--home p {
+        width: 58%;
     }
+
+}
+
+/************************************ 800px ***********************************/
+@media (min-width: 800px) {
+    .destination-info > p {
+        width: 65%;
+    }
+
+}
+
     
-    nav {
-        order: 2;
-    }
+
+/*******************************************************************************/
+/************************************ 950px ************************************/
+@media (min-width: 950px) {
+    
     
     .primary-navigation {
         margin-block: 2rem;
@@ -152,28 +241,33 @@
         column-gap: var(--container-gap, 2rem);
     }
     
-
     .grid-container--home {
-        grid-template-columns: minmax(1rem, 1fr) minmax(0, 34rem) minmax(0, 34rem) minmax(1rem, 1fr);
+        grid-template-columns: minmax(0, 34rem) minmax(0, 34rem);
         max-height: 100%;
         align-items: end;
-        
         margin-bottom: 4rem;
+        /* same as logo margin */
+        margin-inline: clamp(1.5rem, 5vw, 3.5rem); 
     }
-    
+
     .grid-container--home > *:first-child {
-        grid-column: 2;
+        grid-column: 1;
     }
 
     .grid-container--home > *:last-child {
-        grid-column: 3;
+        grid-column: 2;
         justify-self: end;
+    }
+
+    .grid-container--home .name {
+        font-size: 8rem;
     }
 
     .grid-container--home p {
         margin-top: 3rem;
         margin-bottom: 0;
-        width: 90%;
+        margin-inline: 0;
+        width: 100%;
     }
 
     .large-button {
@@ -184,62 +278,125 @@
     }
     
     .grid-container--destination {
-        grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 33rem)) minmax(1rem, 1fr);
+        grid-template-columns: 1fr 1rem 1fr;
         justify-items: start;
         grid-template-areas: 
-            '. title title .'
-            '. image tabs .'
-            '. image content .';
+            'title title title'
+            'image . tabs'
+            'image . content';
+        /* same as logo margin */
+        margin-inline: clamp(1.5rem, 5vw, 3.5rem); 
     }
 
     .numbered-title {
         justify-self: start;
         align-self: start;
-        margin: 0;
+        margin-inline: 0;
         margin-top: 3rem;
+        width: 100%;
     }
-    
+
     .grid-container--destination > picture {
-        max-width: 85%;
+        min-width: 100%;
         align-self: center;
         justify-self: center;
-        margin-bottom: 3rem;
+        /* margin-bottom: 3rem; */
+        margin: 0;
     }
 
     .grid-container--destination > .tab-list {
-        margin-left: 7rem;
+        margin-left: 0;
     }
     .destination-info {
         margin-left: 7rem;
         margin-bottom: 3rem
     }
-     
+
+    .destination-info p {
+        margin-inline: 0;
+        width: 95%;
+    }
+
     .destination-meta {
         --gap: min(6vw, 6rem);
         justify-content: start;
+        margin-inline: 0;
     }
     
     .grid-container--crew {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 42.5rem) minmax(0, 23rem) minmax(1rem, 1fr);
+        grid-template-columns: 1.2fr 1fr;
+        /* minmax(0, 34rem) minmax(0, 34rem); */
         justify-items: start;
         grid-template-areas: 
-            '. title title .'
-            '. content image .'
-            '. tabs image .';
+            'title title'
+            'content image '
+            'tabs image';
+        /* same as logo margin */
+        margin-inline: clamp(1.5rem, 5vw, 3.5rem); 
+    }
+
+    .crew-details .name,
+    .crew-details p {
+        margin-inline: 0;
+    }
+
+    .crew-details .name {
+        width: 100%;
+    }
+
+    .crew-details > p {
+        width: 26rem;
+    }
+
+    #pilot-tab > p {
+        width: 28rem;
+    }
+
+    .grid-container--crew > picture {
+        align-self: end; 
+        max-width: 100%;
+    }
+
+    #mission-image {
+        width: 90%;
+    }
+
+    #pilot-image {
+        width: 98%;
+    }
+
+    #crew-image {
+        width: 108%;
+    }
+
+    .dot-indicators {
+        margin-top: 0;
+        align-self: start;
+    }
+
+    /* .grid-container--technology > .number-indicators {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .number-indicators > * {
+        font-size: 1.3rem;
+        width: 3.75rem;
+        height: 3.75rem;
+        padding: 1.3rem;
     }
     
-    .grid-container--crew > picture {
-        grid-column: span 2;
-        align-self: end; 
-        max-width: 90%;
-    }
+    .number-indicators > * {
+        font-size: 2rem;
+    } */
+
 
     .grid-container--technology {
         grid-template-columns: minmax(4rem, 1fr) minmax(0, 6rem) minmax(0, 33rem) minmax(0, 25rem) minmax(1rem, 1fr);
         justify-items: start !important;
         align-items: start;
-       
-        
         grid-template-areas: 
             '. title title title'
             '. tabs content image'
@@ -252,6 +409,7 @@
         margin-top: 10rem;
         margin-bottom: 1rem;
     }
+
 
     .grid-container--technology > .technology-details {
         margin-top: 10rem;
@@ -273,12 +431,21 @@
 
 /********************************************** 1200px *******************************/
 @media (min-width: 1200px) {
+    :root {
+        /* font-sizes */
+        --fs-800: 6.25rem;
+        --fs-700: 3.5rem;
+        --fs-600: 2rem;
+        --fs-500: 1.75rem;
+        --fs-400: 1.125rem;
+    }
+
     .primary-header::after {
         content: '';
         display: flex;
         align-items: center;
         position: relative;
-        margin-left: 3rem;
+        margin-left: 2.5rem;
         height: 1px;
         width: 100%;
         margin-right: -2.5rem;
@@ -286,15 +453,128 @@
         order: 1;
     }
 
+    nav {
+        order: 2;
+    }
+
+    .grid-container--home > *:first-child {
+        grid-column: 1;
+    }
+
+    .grid-container--home > *:last-child {
+        grid-column: 2;
+        justify-self: end;
+    }
+
+    .grid-container--home {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        max-height: 100%;
+        align-items: end;
+        margin-bottom: 4rem;
+        /* left margin based on logo and horizontal line margins */
+        margin-left: clamp(8.5rem, 7vw + 7rem, 10.5rem);
+        margin-right: 5rem;
+    }
+
+    .grid-container--home .name {
+        font-size: 9.375rem;
+    }
+
+    .grid-container--destination {
+        grid-template-columns: minmax(0, 1fr) 1 rem minmax(0, 1fr);
+        max-height: 100%;
+        align-items: end;
+        margin-bottom: 4rem;
+        /* left margin based on logo and horizontal line margins */
+        margin-left: clamp(8.5rem, 7vw + 7rem, 10.5rem);
+        margin-right: 5rem;
+    }
+
+    .grid-container--destination img {
+        margin-inline: auto;
+    }
+
+    .tab-list,
+    .destination-info {
+        padding-left: 4rem;
+    }
+
+    .destination-info > p {
+        width: 91%;
+    }
+
+    .destination-meta {
+        margin-right: 20%;
+        --gap: 0;
+    }
+
+
+    .grid-container--crew {
+        grid-template-columns: 1.6fr 1fr;
+        margin-left: clamp(8.5rem, 7vw + 7rem, 10.5rem);
+        margin-right: 1.5rem;
+    }
+
+    .crew-details > p {
+        width: 27rem;
+    }
+
+    /* #pilot-tab > p {
+        width: 28rem;
+    } */
+
+    .grid-container--technology > .number-indicators {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .number-indicators > * {
+        font-size: 1.3rem;
+        width: 3.75rem;
+        height: 3.75rem;
+        padding: 1.3rem;
+    }
     
     .number-indicators > * {
         font-size: 2rem;
     }
 }
 
+/********************************************** 1300px *******************************/
+@media (min-width: 1300px) {
+    .grid-container--home {
+        margin-right: 6.5rem;
+    }
+
+    .grid-container--crew {
+        grid-template-columns: 1.4fr 1fr;
+        margin-left: clamp(8.5rem, 7vw + 7rem, 10.5rem);
+        margin-right: 2.3rem;
+    }
+}
+
+/********************************************** 1350px *******************************/
+@media (min-width: 1350px) {
+    .grid-container--home {
+        margin-left: clamp(8.5rem, 7vw + 7rem, 10.5rem);
+        margin-right: clamp(8rem, 7vw + 6.5rem, 10rem);
+    }
+
+    .grid-container--crew {
+        grid-template-columns: 1.3fr 1fr;
+        margin-left: clamp(8.5rem, 7vw + 7rem, 10.5rem);
+        margin-right: 4rem;
+    }
+}
+
+
+/********************************************** 1440px *******************************/
 @media (min-width: 1440px) {
     body {
       max-width: 1440px;
+      max-height: 900px;
       margin: 0 auto;
     }
   
@@ -302,4 +582,6 @@
       max-width: 1440px;
       margin: 0 auto;
     }
+
+
 }
