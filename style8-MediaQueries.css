@@ -111,8 +111,8 @@
 }
 
 
-/************************************ 850px ************************************/
-@media (min-width: 850px) {
+/************************************ 900px ************************************/
+@media (min-width: 900px) {
     :root {
         /* font-sizes */
         --fs-800: 6.25rem;
@@ -245,12 +245,12 @@
         margin-bottom: 1rem;
     }
 
-    .number-indicators > * {
+    /* .number-indicators > * {
         font-size: 3.5rem;
         width: 5.5rem;
         height: 5.5rem;
         padding: 1.2em;
-    }
+    } */
 
     .grid-container--technology > .technology-details {
         margin-top: 10rem;
