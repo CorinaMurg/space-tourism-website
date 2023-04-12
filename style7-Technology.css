@@ -33,14 +33,19 @@
 .technology-details p.name {
     letter-spacing: 1.5px;
     color:hsl( var(--clr-white))
-  }
+}
+
+.technology-details p {
+    width: 95%;
+    margin-inline: auto;
+    hyphens: none;
+}
 
 .number-indicators > * {
     cursor: pointer;
-    
-    font-size: 2rem;
-    width: 5rem;
-    height: 5rem;
+    font-size: 1.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background: transparent;
     border: 1.4px solid hsl( var(--clr-white) / .25);
     border-radius: 50%;

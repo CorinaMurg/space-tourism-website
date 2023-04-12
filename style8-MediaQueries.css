@@ -82,7 +82,8 @@
 
 
     .large-button {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        bottom: -2.5rem;
     }
 
     .destination {
@@ -130,7 +131,6 @@
         margin-block: 2rem;
     }
 
-
     .home {
         background-image: url(./assets/home/background-home-desktop.jpg);
     }
@@ -150,12 +150,15 @@
     .grid-container {
         text-align: left;
         column-gap: var(--container-gap, 2rem);
-        grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 33rem)) minmax(1rem, 1fr);
     }
     
+
     .grid-container--home {
+        grid-template-columns: minmax(1rem, 1fr) minmax(0, 34rem) minmax(0, 34rem) minmax(1rem, 1fr);
         max-height: 100%;
-        align-items:end;
+        align-items: end;
+        
+        margin-bottom: 4rem;
     }
     
     .grid-container--home > *:first-child {
@@ -164,20 +167,25 @@
 
     .grid-container--home > *:last-child {
         grid-column: 3;
-        justify-self: right;
+        justify-self: end;
     }
 
     .grid-container--home p {
+        margin-top: 3rem;
         margin-bottom: 0;
+        width: 90%;
     }
 
     .large-button {
-        font-size: 2rem;
+        justify-self:center;
+        align-self: center;
+        font-size: 2.1rem;
+        bottom: 0; 
     }
     
     .grid-container--destination {
+        grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 33rem)) minmax(1rem, 1fr);
         justify-items: start;
-        /* align-content: start; */
         grid-template-areas: 
             '. title title .'
             '. image tabs .'
@@ -245,22 +253,13 @@
         margin-bottom: 1rem;
     }
 
-    /* .number-indicators > * {
-        font-size: 3.5rem;
-        width: 5.5rem;
-        height: 5.5rem;
-        padding: 1.2em;
-    } */
-
     .grid-container--technology > .technology-details {
         margin-top: 10rem;
     }    
 
-
-    .paragraph {
+    .grid-container--technology > .paragraph {
         width: 90%;
         --flow-space: 2rem;
-        line-height: 1.8;
     }
     
     .grid-container--technology > picture {

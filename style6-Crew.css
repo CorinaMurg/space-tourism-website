@@ -45,6 +45,10 @@
     color: hsl( var(--clr-white) / .5);
 }
 
+.crew-details p {
+    width: 95%;
+}
+
 .crew-details p.name {
     color: hsl( var(--clr-white));
 }

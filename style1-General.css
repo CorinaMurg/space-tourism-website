@@ -71,12 +71,10 @@ body {
     font-size: var(--fs-400);
     color: hsl( var(--clr-light) );
     background-color: hsl( var(--clr-dark) );
-    line-height: 1.5;
+    line-height: 1.8;
     min-height: 100vh;
-    
     display: grid;
     grid-template-rows: min-content 1fr;
-    
     overflow-x: hidden;
 }
 
