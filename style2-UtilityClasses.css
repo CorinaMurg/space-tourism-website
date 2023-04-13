@@ -63,7 +63,7 @@
 .bg-white { background-color: hsl( var(--clr-white) );}
 
 .text-dark { color: hsl( var(--clr-dark) );}
-.text-accent { color: hsl( var(--clr-light) );}
+.text-light { color: hsl( var(--clr-light) );}
 .text-white { color: hsl( var(--clr-white) );}
 
 /* typography */
@@ -72,31 +72,49 @@
 .ff-sans-cond { font-family: var(--ff-sans-cond); } 
 .ff-sans-normal { font-family: var(--ff-sans-normal); } 
 
-.letter-spacing-1 { letter-spacing: 4.75px; } 
+/* .letter-spacing-1 { letter-spacing: 4.75px; } 
 .letter-spacing-2 { letter-spacing: 2.7px; } 
-.letter-spacing-3 { letter-spacing: 2.35px; } 
+.letter-spacing-3 { letter-spacing: 2.35px; }  */
+
+.letter-spacing-1 { letter-spacing: 2.36px; } 
+.letter-spacing-2 { letter-spacing: 2.7px; } 
+.letter-spacing-3 { letter-spacing: 3.36px; } 
+.letter-spacing-3 { letter-spacing: 4.72px; } 
 
 .uppercase { text-transform: uppercase; }
 
-.fs-900 { font-size: var(--fs-900); }
-.fs-800 { font-size: var(--fs-800); }
-.fs-700 { font-size: var(--fs-700); }
-.fs-600 { font-size: var(--fs-600); }
-.fs-500 { font-size: var(--fs-500); }
-.fs-400 { font-size: var(--fs-400); }
-.fs-300 { font-size: var(--fs-300); }
-.fs-200 { font-size: var(--fs-200); }
+.fs-frontPageName { font-size: var(--fs-frontPageName); }
+.fs-destinationNav{ font-size: var(--fs-destinationNav); }
+.fs-planetName{ font-size: var(--fs-planetName); }
+.fs-avgDistance{ font-size: var(--fs-avgDistance); }
+.fs-km{ font-size: var(--fs-km); }
+.fs-pageTitle{ font-size: var(--fs-pageTitle); }
+.fs-terminology{ font-size: var(--fs-terminology); }
+.fs-crewJob{ font-size: var(--fs-crewJob); }
+.fs-name{ font-size: var(--fs-name); }
+.fs-paragraph{ font-size: var(--fs-paragraph); }
 
-.fs-900,
-.fs-800,
-.fs-700,
-.fs-600 {
+
+.fs-frontPageName,
+.fs-destinationNav,
+.fs-planetName,
+.fs-avgDistance,
+.fs-km,
+.fs-pageTitle,
+.fs-terminology,
+.fs-crewJob,
+.fs-names
+ {
     line-height: 1.1;
+}
+
+.fs-paragraph {
+    line-height: 1.6;
 }
 
 .numbered-title {
     font-family: var(--ff-sans-cond);
-    font-size: var(--fs-500);
+    font-size: var(--fs-pageTitle);
     text-transform: uppercase;
     letter-spacing: 2.7px; 
 }

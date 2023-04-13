@@ -10,14 +10,17 @@
 
     
     /* font-sizes */
-    --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
-    --fs-800: 3.5rem;
-    --fs-700: 1.5rem;
-    --fs-600: 1rem;
-    --fs-500: 1rem;
-    --fs-400: 0.9375rem;
-    --fs-300: 1rem;
-    --fs-200: 0.875rem;
+    /* --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem); */
+    --fs-frontPageName: 5rem;
+    --fs-destinationNav: 0.875rem;
+    --fs-planetName: 3.5rem;
+    --fs-avgDistance: 0.875rem;
+    --fs-km: 1.75rem;
+    --fs-pageTitle: 1rem;
+    --fs-terminology: 0.875rem;
+    --fs-crewJob: 1rem;
+    --fs-name: 1.5rem;
+    --fs-paragraph: 0.9375rem;
     
     /* font-families */
     --ff-serif: "Bellefair", serif;
@@ -71,7 +74,6 @@ body {
     font-size: var(--fs-400);
     color: hsl( var(--clr-light) );
     background-color: hsl( var(--clr-dark) );
-    line-height: 1.8;
     min-height: 100vh;
     display: grid;
     grid-template-rows: min-content 1fr;

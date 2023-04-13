@@ -65,11 +65,20 @@
 /************************************ 560px ***********************************/
 @media (min-width: 560px) {
     :root {
-        --fs-800: 5rem;
-        --fs-700: 2.5rem;
-        --fs-600: 1.5rem;
-        --fs-500: 1.25rem;
-        --fs-400: 1rem;
+        --fs-frontPageName: 9.375rem;
+        --fs-destinationNav: 1rem;
+        --fs-planetName: 5rem;
+        --fs-avgDistance: 0.875rem;
+        --fs-km: 1.75rem;
+        --fs-pageTitle: 1.25rem;
+        --fs-terminology: 1rem;
+        --fs-crewJob: 1.5rem;
+        --fs-name: 2.5rem;
+        --fs-paragraph: 1rem;
+    }
+
+    .fs-paragraph {
+        line-height: 1.75;
     }
 
     .grid-container {
@@ -96,10 +105,9 @@
         margin-top: 4rem;
     }
 
-    .grid-container--home .name {
-        font-size: 9.375rem;
+    /* .grid-container--home .name {
         margin-top: 1rem;
-    }
+    } */
 
     .grid-container--home p {
         width: 80%;
@@ -204,6 +212,10 @@
         font-size: 9.375rem;
     } */
 
+    .fs-paragraph {
+        line-height: 1.75;
+    }
+
     .grid-container--home p {
         width: 58%;
     }
@@ -234,6 +246,24 @@
 /*******************************************************************************/
 /************************************ 950px ************************************/
 @media (min-width: 950px) {
+    :root {
+        --fs-frontPageName: 9.375rem;
+        --fs-destinationNav: 1rem;
+        --fs-planetName: 6.25rem;
+        --fs-avgDistance: 0.875rem;
+        --fs-km: 1.75rem;
+        --fs-pageTitle: 1.75rem;
+        --fs-terminology: 1rem;
+        --fs-crewJob: 2rem;
+        --fs-name: 3.5rem;
+        --fs-paragraph: 1.125rem;
+    }
+
+    .fs-paragraph {
+        line-height: 1.77;
+    }
+
+
     .primary-navigation {
         margin-block: 2rem;
     }
@@ -432,8 +462,8 @@
     }
 }
 
-/********************************************** 1200px *******************************/
-@media (min-width: 1200px) {
+/********************************************** 1250px *******************************/
+@media (min-width: 1250px) {
     :root {
         /* font-sizes */
         --fs-800: 6.25rem;
@@ -497,33 +527,21 @@
         margin-inline: auto;
     }
 
-    .tab-list,
-    .destination-info {
-        padding-left: 4rem;
-    }
-
     .destination-info > p {
         width: 91%;
     }
 
     .destination-meta {
-        margin-right: 20%;
-        --gap: 0;
+        margin-right: 10%;
+        --gap: 2.5;
     }
 
     .grid-container--crew {
-        grid-template-columns: 1.1fr 0.25fr 1fr;
+        grid-template-columns: 1.1fr 0.15fr 1fr;
         margin-left: clamp(8.5rem, 7vw + 7rem, 10.5rem);
         margin-right: 1.5rem;
     }
 
-    .crew-details > p {
-        width: 27rem;
-    }
-
-    #pilot-tab > p {
-        width: 28rem;
-    }
 
     #pilot-image,
     #crew-image,
@@ -535,7 +553,7 @@
     }
 
     .grid-container--technology {
-        grid-template-columns:  6rem 1fr 1fr 0.3fr;
+        grid-template-columns:  5rem 1.6fr 1fr 0.3fr;
         /* left margin based on logo and horizontal line margins */
         margin-left: clamp(8.5rem, 7vw + 7rem, 10.5rem);
     }
@@ -547,9 +565,10 @@
         padding: 1.5rem;
     }
 
-    /* .technology-details > p {
+    .technology-details > p {
         width: 85%;
-    } */
+    }
+
 }
 
 /********************************************** 1300px *******************************/
@@ -559,8 +578,7 @@
     }
 
     .grid-container--technology {
-        grid-template-columns: 8rem 1.3fr 1fr 0.3fr;
-        /* 8rem minmax(0, 33rem) minmax(0, 25rem); */
+        grid-template-columns: 8rem 1.6fr 1fr 0.3fr;
     }
 }
 
@@ -572,38 +590,42 @@
     }
 
     .grid-container--crew {
-        grid-template-columns: 1.2fr 0.25fr 1fr;
+        grid-template-columns: 1fr 0.15fr 1fr;
         margin-left: clamp(8.5rem, 7vw + 7rem, 10.5rem);
         margin-right: 2.3rem;
     }
 
+    .crew-details .fs-name {
+        width: 100%;
+    }
+
     #pilot-image,
-    #crew-image,
-    #mission-tab 
+    #crew-tab,
+    #mission-tab,
+    #commander-tab,
+    #crew-image
     {
         grid-column: auto / span 2;
     }
 
     #pilot-image,
     #crew-image,
-    #mission-image 
+    #mission-image,
+    #commnader-image 
     {
         width: 100%;
         justify-self: start;
-    }
+    } 
 
     .technology-details > p {
         width: 85%;
     }
 
-    .technology img {
-        margin-right: 0.5rem;
-    }
 }
 
 
 /********************************************** 1440px *******************************/
-/* @media (min-width: 1440px) {
+@media (min-width: 1440px) {
     body {
       max-width: 1440px;
       max-height: 900px;
@@ -615,20 +637,4 @@
       margin: 0 auto;
     }
 
-} */
-
-@media (min-width: 1440px) {
-    body {
-        max-width: 1440px;
-        max-height: 900px;
-        margin: 0 auto;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-    
-    nav {
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-}
+} 
