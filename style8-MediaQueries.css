@@ -54,18 +54,10 @@
     }
 }
 
-/************************************ 430 px ***********************************/
-@media (min-width: 430px) {
-    .large-button {
-        font-size: 1.3rem;
-        margin-top: 7rem;
-    }
-}
-
-/************************************ 460 px ***********************************/
-@media (min-width: 430px) {
-    .large-button {
-        font-size: 1.4rem;
+/************************************ 450px ***********************************/
+@media (min-width: 450px) {
+    .grid-container--home p {
+        width: 80%;
     }
 }
 
@@ -76,7 +68,11 @@
     }
 
     .large-button {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
+    }
+
+    .grid-container--home p {
+        width: 70%;
     }
 
 }
@@ -135,7 +131,7 @@
     }
 
     .grid-container--home p {
-        width: 80%;
+        width: 70%;
         margin-inline: auto;
     }
 
@@ -239,7 +235,7 @@
     }
 
     .grid-container--home p {
-        width: 58%;
+        width: 50%;
     }
 }
 

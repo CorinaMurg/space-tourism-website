@@ -4,9 +4,8 @@
 }
 
 .large-button {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     position: relative;
-    margin-top: 3rem;
     z-index: 1;
     display: inline-grid;
     place-items: center;
@@ -34,13 +33,17 @@
     transform: scale(1.5);
 }
 
+/* .round-link {
+    position: relative;
+    bottom: 2%;
+} */
 
 .grid-container {
     text-align: center;
     display: grid;
     place-items: center;
     padding-inline: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 7%;
 }
 
 .fs-frontPageName {
@@ -50,6 +53,12 @@
 
 .grid-container--home p {
     margin-bottom: 5rem;
+    width: 93%;
+    margin-inline: auto;
+}
+
+.grid-container--home h1 {
+    margin-top: 2rem;
 }
 
 
