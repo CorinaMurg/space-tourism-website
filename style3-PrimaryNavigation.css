@@ -34,7 +34,6 @@
     display: none;
 }
 
-
 .underline-indicators > * {
     cursor: pointer;
     padding: var(--underline-gap, .5rem) 0;
