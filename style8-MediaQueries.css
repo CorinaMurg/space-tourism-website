@@ -603,9 +603,10 @@
 
 
 /********************************************** 1440px *******************************/
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
     body {
       max-width: 1440px;
+      max-height: 900px;
       margin: 0 auto;
     }
   
@@ -614,9 +615,9 @@
       margin: 0 auto;
     }
 
-}
+} */
 
-/* @media (min-width: 1440px) {
+@media (min-width: 1440px) {
     body {
         max-width: 1440px;
         max-height: 900px;
@@ -630,4 +631,4 @@
         max-width: 1440px;
         margin: 0 auto;
     }
-} */
+}

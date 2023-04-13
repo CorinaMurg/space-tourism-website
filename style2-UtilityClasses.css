@@ -23,11 +23,11 @@
     --flow-space: .75rem;
 }
 
-.container {
+/* .container {
     padding-inline: 2em;
     margin-inline: auto;
     max-width: 80rem;
-}
+} */
 
 .sr-only {
   position: absolute; 
