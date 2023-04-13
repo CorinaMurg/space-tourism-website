@@ -1,22 +1,13 @@
 
-
-/* destination */
 .destination {
     background-image: url(./assets/destination/background-destination-mobile.jpg);
 }
-
-
-/* ----------------------------- */
-/* Layout                        */
-/* ----------------------------- */
-
 
 .tab-list {
     --gap: 1rem;
     display: flex;
     justify-content: center;
 }
-
 
 .grid-container--destination {
     --flow-space: 2rem;
@@ -50,26 +41,15 @@
     color: hsl( var(--clr-white));
 }
 
-/* .destination-info p {
-    width: 95%;
-    margin-inline: auto;
-} */
-
 .destination-meta {
     flex-direction: column;
     border-top: 1px solid hsl( var(--clr-white) / .1);
     padding-top: 2.5rem;
     margin-top: 2.5rem;
-    border-top: 1px solid hsl( var(--clr-white) / .25);
-    
+    border-top: 1px solid hsl( var(--clr-white) / .25); 
 }
 
-
-
-.destination-meta p {
-    font-size: 1.75rem;
-    color: hsl( var(--clr-white));
+.fs-km {
     margin-top: 1rem;
-    
 }
 

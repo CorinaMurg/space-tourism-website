@@ -81,7 +81,6 @@
         line-height: 1.75;
     }
 
-    
     .fs-destinationNav,
     .fs-terminology {
         letter-spacing: var(--letter-spacing-2);
@@ -114,10 +113,6 @@
     .grid-container--home div {
         margin-top: 4rem;
     }
-
-    /* .grid-container--home .name {
-        margin-top: 1rem;
-    } */
 
     .grid-container--home p {
         width: 80%;
@@ -159,7 +154,7 @@
         width: 60%;
     }
 
-    .destination-meta > p{
+    .destination-meta > p {
         width: 100%;
     }
 
@@ -187,7 +182,7 @@
         margin-top: 2rem;
     }
 
-    .crew-details p {
+    .crew-details > p {
         margin-inline: auto;
         width: 60%;
     }
@@ -215,13 +210,9 @@
 
 }
 
+
 /************************************ 700px ***********************************/
 @media (min-width: 700px) {
-    /**** set @560 ***/
-    /* .grid-container--home .name {
-        font-size: 9.375rem;
-    } */
-
     .fs-paragraph {
         line-height: 1.75;
     }
@@ -229,13 +220,8 @@
     .grid-container--home p {
         width: 58%;
     }
-
-    /* .technology-details {
-        padding-inline: 0;
-        margin-inline: 0;
-    } */
-
 }
+
 
 /************************************ 750px ***********************************/
 @media (min-width: 750px) {
@@ -253,7 +239,7 @@
     }
 }
 
-/*******************************************************************************/
+
 /************************************ 950px ************************************/
 @media (min-width: 950px) {
     :root {
@@ -276,7 +262,6 @@
     .fs-pageTitle {
         letter-spacing: var(--letter-spacing-4);
     }
-
 
     .primary-navigation {
         margin-block: 2rem;
@@ -362,13 +347,13 @@
         min-width: 100%;
         align-self: center;
         justify-self: center;
-        /* margin-bottom: 3rem; */
         margin: 0;
     }
 
     .grid-container--destination > .tab-list {
         margin-left: 0;
     }
+
     .destination-info {
         margin-left: 7rem;
         margin-bottom: 3rem
@@ -430,10 +415,8 @@
         align-self: start;
     }
 
-
     .grid-container--technology {
         grid-template-columns:  4rem 1fr 1fr 0.3fr;
-        /* 6rem minmax(0, 33rem) minmax(0, 25rem); */
         align-items: start;
         grid-template-areas: 
             'title title title'
@@ -468,7 +451,6 @@
         margin-bottom: 2rem;
         margin-inline: 0;
         justify-self: end;
-        /* max-width: 100%; */
     }
 
     .grid-container--technology img {
@@ -479,7 +461,6 @@
 /********************************************** 1250px *******************************/
 @media (min-width: 1250px) {
     :root {
-        /* font-sizes */
         --fs-800: 6.25rem;
         --fs-700: 3.5rem;
         --fs-600: 2rem;
@@ -556,7 +537,6 @@
         margin-right: 1.5rem;
     }
 
-
     #pilot-image,
     #crew-image,
     #mission-image,
@@ -585,6 +565,7 @@
 
 }
 
+
 /********************************************** 1300px *******************************/
 @media (min-width: 1300px) {
     .grid-container--home {
@@ -595,6 +576,7 @@
         grid-template-columns: 8rem 1.6fr 1fr 0.3fr;
     }
 }
+
 
 /********************************************** 1350px *******************************/
 @media (min-width: 1350px) {
@@ -634,7 +616,6 @@
     .technology-details > p {
         width: 85%;
     }
-
 }
 
 
@@ -650,5 +631,4 @@
       max-width: 1440px;
       margin: 0 auto;
     }
-
 } 

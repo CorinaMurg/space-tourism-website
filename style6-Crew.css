@@ -1,6 +1,4 @@
 
-/* crew layout */
-
 .dot-indicators > * {
     cursor: pointer;
     border: 0;
@@ -45,11 +43,3 @@
     color: hsl( var(--clr-white) / .5);
 }
 
-/* .crew-details p {
-    width: 95%;
-    margin-inline: auto;
-} */
-
-.crew-details p.name {
-    color: hsl( var(--clr-white));
-}

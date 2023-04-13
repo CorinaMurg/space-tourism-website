@@ -5,9 +5,7 @@
     --clr-light: 231 77% 90%;
     --clr-white: 0 0% 100%;
 
-    
     /* font-sizes */
-    /* --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem); */
     --fs-frontPageName: 5rem;
     --fs-destinationNav: 0.875rem;
     --fs-planetName: 3.5rem;
