@@ -6,6 +6,7 @@
 .large-button {
     font-size: 1.1rem;
     position: relative;
+    margin-top: 3rem;
     z-index: 1;
     display: inline-grid;
     place-items: center;

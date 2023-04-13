@@ -54,11 +54,31 @@
     }
 }
 
+/************************************ 430 px ***********************************/
+@media (min-width: 430px) {
+    .large-button {
+        font-size: 1.3rem;
+        margin-top: 7rem;
+    }
+}
+
+/************************************ 460 px ***********************************/
+@media (min-width: 430px) {
+    .large-button {
+        font-size: 1.4rem;
+    }
+}
+
 /************************************ 500px ***********************************/
 @media (min-width: 500px) {
     article > p {
         width: 70%;
     }
+
+    .large-button {
+        font-size: 1.6rem;
+    }
+
 }
 
 
@@ -121,6 +141,7 @@
 
     .large-button {
         font-size: 2rem;
+        margin-top: 0;
     }
 
     .destination {
