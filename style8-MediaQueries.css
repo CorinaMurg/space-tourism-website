@@ -81,6 +81,16 @@
         line-height: 1.75;
     }
 
+    
+    .fs-destinationNav,
+    .fs-terminology {
+        letter-spacing: var(--letter-spacing-2);
+    }
+
+    .fs-pageTitle {
+        letter-spacing: var(--letter-spacing-3);
+    }
+
     .grid-container {
         padding-inline: 0;
     }
@@ -261,6 +271,10 @@
 
     .fs-paragraph {
         line-height: 1.77;
+    }
+
+    .fs-pageTitle {
+        letter-spacing: var(--letter-spacing-4);
     }
 
 

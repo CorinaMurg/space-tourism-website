@@ -72,15 +72,6 @@
 .ff-sans-cond { font-family: var(--ff-sans-cond); } 
 .ff-sans-normal { font-family: var(--ff-sans-normal); } 
 
-/* .letter-spacing-1 { letter-spacing: 4.75px; } 
-.letter-spacing-2 { letter-spacing: 2.7px; } 
-.letter-spacing-3 { letter-spacing: 2.35px; }  */
-
-.letter-spacing-1 { letter-spacing: 2.36px; } 
-.letter-spacing-2 { letter-spacing: 2.7px; } 
-.letter-spacing-3 { letter-spacing: 3.36px; } 
-.letter-spacing-3 { letter-spacing: 4.72px; } 
-
 .uppercase { text-transform: uppercase; }
 
 .fs-frontPageName { font-size: var(--fs-frontPageName); }
@@ -110,6 +101,23 @@
 
 .fs-paragraph {
     line-height: 1.6;
+}
+
+
+/* .letter-spacing-1 { letter-spacing: 4.75px; } 
+.letter-spacing-2 { letter-spacing: 2.7px; } 
+.letter-spacing-3 { letter-spacing: 2.35px; }  */
+
+
+
+.fs-destinationNav,
+.fs-avgDistance,
+.fs-terminology {
+    letter-spacing: var(--letter-spacing-1);
+}
+
+.fs-pageTitle {
+    letter-spacing: var(--letter-spacing-2);
 }
 
 .numbered-title {
