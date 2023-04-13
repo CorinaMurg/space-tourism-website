@@ -158,7 +158,7 @@
     }
 
     .destination-info > p {
-        width: 75%;
+        width: 65%;
     }
 
     .destination-meta {
@@ -234,8 +234,12 @@
         line-height: 1.75;
     }
 
-    .grid-container--home p {
-        width: 50%;
+    .grid-container--home > p {
+        width: 58%;
+    }
+
+    .technology-details > p {
+        width: 60%;
     }
 }
 
