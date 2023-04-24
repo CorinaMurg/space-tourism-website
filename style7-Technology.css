@@ -21,7 +21,7 @@
     margin-inline: -0.5rem;
 }
 
-.grid-container--technology > .number-indicators {
+.grid-container--technology > .number-links {
     grid-area: tabs;
 }
 
@@ -30,7 +30,7 @@
     padding-inline: 1rem;
 }
 
-.number-indicators > * {
+.number-links > * {
     cursor: pointer;
     font-size: 1.3rem;
     width: 2.5rem;
@@ -46,12 +46,12 @@
     margin-bottom: 1rem;
 }
 
-.number-indicators > *:hover,
-.number-indicators > *:focus { 
+.number-links > *:hover,
+.number-links > *:focus { 
     background-color: hsl( var(--clr-white) / .5);
 }
 
-.number-indicators > [aria-selected="true"] {
+.number-links > [aria-selected="true"] {
     color: hsl( var(--clr-dark) );
     background-color: hsl( var(--clr-white) / 1); 
     

@@ -1,5 +1,5 @@
 
-.dot-indicators > * {
+.dot-links > * {
     cursor: pointer;
     border: 0;
     border-radius: 50%;
@@ -7,12 +7,12 @@
     background-color: hsl( var(--clr-white) / .25);
 }
  
-.dot-indicators > *:hover,
-.dot-indicators > *:focus { 
+.dot-links > *:hover,
+.dot-links > *:focus { 
     background-color: hsl( var(--clr-white) / .5);
 }
 
-.dot-indicators > [aria-selected="true"] {
+.dot-links > [aria-selected="true"] {
     background-color: hsl( var(--clr-white) / 1); 
 }
 
@@ -31,7 +31,7 @@
     border-bottom: 1px solid hsl( var(--clr-white) / .1);
 }
 
-.grid-container--crew > .dot-indicators {
+.grid-container--crew > .dot-links {
     grid-area: tabs;
 }
 

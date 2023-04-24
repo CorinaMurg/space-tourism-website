@@ -5,14 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <!-- Google fonts -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
       rel="stylesheet">
       
-  <!-- Our custom CSS -->
-    <!-- <link rel="stylesheet" href="index.css"> -->
     <link rel="stylesheet" href="style1-General.css">
     <link rel="stylesheet" href="style2-UtilityClasses.css">
     <link rel="stylesheet" href="style3-PrimaryNavigation.css">
@@ -35,7 +33,7 @@
     </div>
     <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
     <nav>
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation menu-links flex">
             <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a>
             <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a>
             <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span aria-hidden="true">02</span>Crew</a>
@@ -65,14 +63,14 @@
     </picture>
     
     
-    <div class="tab-list underline-indicators flex" role="tablist" aria-label="destination list">
+    <div class="tab-list menu-links flex" role="tablist" aria-label="destination list">
         <button aria-selected="true" role="tab" aria-controls="moon-tab" class="fs-destinationNav uppercase ff-sans-cond text-light" tabindex="0" data-image="moon-image">Moon</button>
         <button aria-selected="false" role="tab" aria-controls="mars-tab" class="fs-destinationNav uppercase ff-sans-cond text-light" tabindex="-1" data-image="mars-image">Mars</button>
         <button aria-selected="false" role="tab" aria-controls="europa-tab" class="fs-destinationNav uppercase ff-sans-cond text-light" tabindex="-1" data-image="europa-image">Europa</button>
         <button aria-selected="false" role="tab" aria-controls="titan-tab" class="fs-destinationNav uppercase ff-sans-cond text-light" tabindex="-1" data-image="titan-image">Titan</button>
     </div>
 
-    <!-- The moon -->
+    <!-- The MOON -->
     <article class="destination-info flow" id="moon-tab" tabindex="0" role="tabpanel">
       <h2 class="fs-planetName uppercase ff-serif">Moon</h2>
 
@@ -92,7 +90,7 @@
       </div>
     </article>
     
-    <!-- Mars -->
+    <!-- MARS -->
     <article hidden class="destination-info flow" id="mars-tab" tabindex="0"  role="tabpanel">
       <h2 class="fs-planetName uppercase ff-serif">Mars</h2>
 
@@ -112,7 +110,7 @@
       </div>
     </article>
     
-    <!-- Europa -->
+    <!-- EUROPA -->
     <article hidden class="destination-info flow" id="europa-tab" tabindex="0"  role="tabpanel">
       <h2 class="fs-planetName uppercase ff-serif">Europa</h2>
 
@@ -132,7 +130,7 @@
       </div>
     </article>
     
-    <!-- Titan -->
+    <!-- TITAN -->
     <article hidden class="destination-info flow" id="titan-tab" tabindex="0"  role="tabpanel">
       <h2 class="fs-planetName uppercase ff-serif">Titan</h2>
 

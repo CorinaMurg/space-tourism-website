@@ -3,7 +3,7 @@
     background-image: url(./assets/home/background-home-mobile.jpg);
 }
 
-.large-button {
+.round-anchor {
     font-size: 1.3rem;
     position: relative;
     z-index: 1;
@@ -15,7 +15,7 @@
     text-decoration: none;
 }
 
-.large-button::after {
+.round-anchor::after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -27,16 +27,11 @@
     transition: opacity 500ms linear, transform 750ms ease-in-out;
 }
  
-.large-button:hover::after,
-.large-button:focus::after {
+.round-anchor:hover::after,
+.round-anchor:focus::after {
     opacity: 1;
     transform: scale(1.5);
 }
-
-/* .round-link {
-    position: relative;
-    bottom: 2%;
-} */
 
 .grid-container {
     text-align: center;

@@ -1,4 +1,4 @@
-/* TO DO: change name of large button, read.me, fix sidebar, give credit to scrimba, change logo when clicked */
+/* TO DO:  read.me,  give credit to scrimba */
 
 :root {
     /* colors */
@@ -30,7 +30,6 @@
     --letter-spacing-4: 4.72px; 
 }
 
-
 *,
 *::before,
 *::after {
@@ -52,9 +51,6 @@ picture {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p {
     font-weight: 400;
 }
