@@ -161,7 +161,7 @@
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         max-height: 100%;
         align-items: end;
-        margin-bottom: 6rem;
+        /* margin-bottom: 6rem; */
         /* left margin based on logo and horizontal line margins */
         margin-left: clamp(8.5rem, 7vw + 7rem, 10.5rem);
         margin-right: 5rem;
