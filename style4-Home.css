@@ -4,15 +4,16 @@
 }
 
 .round-anchor {
-    font-size: 1.3rem;
     position: relative;
-    z-index: 1;
     display: inline-grid;
     place-items: center;
     padding: 0 2em;
     border-radius: 50%;
     aspect-ratio: 1;
     text-decoration: none;
+    font-size: 1.3rem;
+    background: hsl( var(--clr-white));
+    z-index: 1;
 }
 
 .round-anchor::after {
@@ -31,14 +32,6 @@
 .round-anchor:focus::after {
     opacity: 1;
     transform: scale(1.5);
-}
-
-.grid-container {
-    text-align: center;
-    display: grid;
-    place-items: center;
-    padding-inline: 1rem;
-    padding-bottom: 7%;
 }
 
 .fs-frontPageName {
