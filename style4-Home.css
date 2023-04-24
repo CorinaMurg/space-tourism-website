@@ -36,8 +36,8 @@
 }
 
 .fs-frontPageName {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -131,7 +131,7 @@
     }
 
     .grid-container--home p {
-        margin-top: 3rem;
+        /* margin-top: 3rem; */
         margin-bottom: 0;
         margin-inline: 0;
         width: 100%;
