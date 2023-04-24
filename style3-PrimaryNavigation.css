@@ -65,5 +65,98 @@
 }
 
 
+@media (max-width: 560px) {
+    .primary-navigation {
+        --underline-gap: .5rem;
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+        list-style: none;
+        padding: min(20rem, 15vh) 2rem;
+        margin: 0;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 500ms ease-in-out;
+    }
+    
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0);
+    }
+    
+    .primary-navigation.menu-links > .active {
+       border: 0;
+    }
+    
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 2000;
+        /* same as logo left margin */
+        right: clamp(1.5rem, 5vw, 3.5rem);
+        top: 2rem;
+        background: transparent;
+        background-image: url(./assets/shared/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1.5rem;
+        aspect-ratio: 1;
+        border: 0;
+    }
+    
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url(./assets/shared/icon-close.svg);
+    }
+    
+    .mobile-nav-toggle:focus-visible {
+        outline: 5px solid white;
+        outline-offset: 5px;
+    }
+}
+
+
+@media (min-width: 560px) and (max-width: 850px) {
+    .primary-navigation a > span {
+        display: none;
+    }
+}
+
+
+/************************************ 560px ***********************************/
+@media (min-width: 560px) {
+    .primary-navigation {
+        padding-inline: clamp(3rem, 7vw, 7rem);
+    }
+}
+
+
+/************************************ 950px ************************************/
+@media (min-width: 950px) {
+    .primary-navigation {
+        margin-block: 2rem;
+    }
+}
+
+/********************************************** 1250px *******************************/
+@media (min-width: 1250px) {
+    .primary-header::after {
+        content: '';
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-left: 2.5rem;
+        height: 1px;
+        width: 100%;
+        margin-right: -2.5rem;
+        background: hsl( var(--clr-white) / .25);
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+}
+
+
+
 
 

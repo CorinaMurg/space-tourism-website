@@ -326,7 +326,7 @@
         justify-self: end;
     }
 
-    .grid-container--home .name {
+    .grid-container--home .fs-frontPageName {
         font-size: 8rem;
     }
 
@@ -407,12 +407,12 @@
         margin-top: 0;
     }
 
-    .crew-details .name,
+    .crew-details .fs-name,
     .crew-details p {
         margin-inline: 0;
     }
 
-    .crew-details .name {
+    .crew-details .fs-name {
         width: 100%;
     }
 
@@ -533,7 +533,7 @@
         margin-right: 5rem;
     }
 
-    .grid-container--home .name {
+    .grid-container--home .fs-frontPageName{
         font-size: 9.375rem;
     }
 

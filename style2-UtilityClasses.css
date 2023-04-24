@@ -133,3 +133,71 @@ article > p {
 }
 
 
+/************************************ 500px ***********************************/
+@media (min-width: 500px) {
+    article > p {
+        width: 70%;
+    }
+}
+
+
+/************************************ 560px ***********************************/
+@media (min-width: 560px) {
+    .fs-paragraph {
+        line-height: 1.75;
+    }
+
+    .fs-destinationNav,
+    .fs-terminology {
+        letter-spacing: var(--letter-spacing-2);
+    }
+
+    .fs-pageTitle {
+        letter-spacing: var(--letter-spacing-3);
+    }
+
+    .grid-container {
+        padding-inline: 0;
+    }
+
+    .numbered-title {
+        /* same as logo margin */
+        margin-inline: clamp(1.5rem, 5vw, 3.5rem);
+        justify-self: start;
+        margin-top: 2rem;
+    }
+}
+
+
+/************************************ 700px ***********************************/
+@media (min-width: 700px) {
+    .fs-paragraph {
+        line-height: 1.75;
+    }
+}
+
+
+/************************************ 950px ************************************/
+@media (min-width: 950px) {
+    .fs-paragraph {
+        line-height: 1.77;
+    }
+
+    .fs-pageTitle {
+        letter-spacing: var(--letter-spacing-4);
+    }
+
+    .numbered-title {
+        justify-self: start;
+        align-self: start;
+        margin-inline: 0;
+        margin-top: 3rem;
+        width: 100%;
+    }
+}
+
+
+
+
+
+

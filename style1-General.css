@@ -93,3 +93,72 @@ select {
 }
 
 
+/************************************ 500px ***********************************/
+@media (min-width: 500px) {
+    article > p {
+        width: 70%;
+    }
+}
+
+
+/************************************ 560px ***********************************/
+@media (min-width: 560px) {
+    :root {
+        --fs-frontPageName: 9.375rem;
+        --fs-destinationNav: 1rem;
+        --fs-planetName: 5rem;
+        --fs-avgDistance: 0.875rem;
+        --fs-km: 1.75rem;
+        --fs-pageTitle: 1.25rem;
+        --fs-terminology: 1rem;
+        --fs-crewJob: 1.5rem;
+        --fs-name: 2.5rem;
+        --fs-paragraph: 1rem;
+    }
+}
+
+
+/************************************ 950px ************************************/
+@media (min-width: 950px) {
+    :root {
+        --fs-frontPageName: 9.375rem;
+        --fs-destinationNav: 1rem;
+        --fs-planetName: 6.25rem;
+        --fs-avgDistance: 0.875rem;
+        --fs-km: 1.75rem;
+        --fs-pageTitle: 1.75rem;
+        --fs-terminology: 1rem;
+        --fs-crewJob: 2rem;
+        --fs-name: 3.5rem;
+        --fs-paragraph: 1.125rem;
+    }
+}
+
+
+/********************************************** 1250px *******************************/
+@media (min-width: 1250px) {
+    :root {
+        --fs-800: 6.25rem;
+        --fs-700: 3.5rem;
+        --fs-600: 2rem;
+        --fs-500: 1.75rem;
+        --fs-400: 1.125rem;
+    }
+}
+
+
+/********************************************** 1440px *******************************/
+@media (min-width: 1440px) {
+    body {
+      max-width: 1440px;
+      max-height: 900px;
+      margin: 0 auto;
+    }
+  
+    nav {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+} 
+
+
