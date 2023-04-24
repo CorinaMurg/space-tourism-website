@@ -132,7 +132,7 @@
     display: grid;
     place-items: center;
     padding-inline: 1rem;
-    padding-bottom: 7%;
+    padding-bottom: 5%;
 }
 
 article > p {

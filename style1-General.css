@@ -64,7 +64,7 @@ body {
     background-color: hsl( var(--clr-dark) );
     min-height: 100vh;
     display: grid;
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: min-content min-content 1fr 6rem;
     overflow-x: hidden;
 }
 
@@ -159,6 +159,15 @@ select {
       max-width: 1440px;
       margin: 0 auto;
     }
+
+    .grid-container--home,
+    .grid-container--destination,
+    .grid-container--crew,
+    .grid-container--technology {
+        justify-items: start;
+        align-content: start;
+    }
+
 } 
 
 
