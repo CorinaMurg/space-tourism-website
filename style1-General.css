@@ -147,7 +147,7 @@ select {
 
 
 /********************************************** 1440px *******************************/
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
     body {
       max-width: 1440px;
       max-height: 900px;
@@ -157,16 +157,16 @@ select {
     nav {
       max-width: 1440px;
       margin: 0 auto;
-    }
+    } */
 
-    .grid-container--home,
+    /* .grid-container--home,
     .grid-container--destination,
     .grid-container--crew,
     .grid-container--technology {
         justify-items: start;
         align-content: start;
-    }
+    } */
 
-} 
+/* }  */
 
 
