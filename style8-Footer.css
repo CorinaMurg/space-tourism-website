@@ -9,13 +9,6 @@ footer {
     background: hsl( var(--clr-dark) / 0.95);
 }
 
-@supports (backdrop-filter: blur(2.5rem)) {
-    footer {
-        background: hsl( var(--clr-white) / 0.04);
-        backdrop-filter: blur(2.5rem);
-    }
-}
-
 .crew footer {
     margin-top: 0;
 }
