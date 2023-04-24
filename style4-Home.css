@@ -158,14 +158,15 @@
     }
 
     .grid-container--home {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-columns: 1fr 2fr;
         max-height: 100%;
         align-items: end;
+        justify-self: start;
+        /* padding-bottom: 0; */
         /* margin-bottom: 6rem; */
         /* left margin based on logo and horizontal line margins */
-        justify-self: start;
         margin-left: clamp(8.5rem, 7vw + 7rem, 10.5rem);
-        margin-right: 5rem;
+        /* margin-right: 5rem; */
     }
 
     .grid-container--home p {
@@ -179,11 +180,11 @@
 
 
 /********************************************** 1300px *******************************/
-@media (min-width: 1300px) {
+/* @media (min-width: 1300px) {
     .grid-container--home {
         margin-right: 6.5rem;
     }
-}
+} */
 
 
 /********************************************** 1350px *******************************/
