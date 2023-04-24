@@ -52,6 +52,7 @@ Create responsive margins using the "clamp" function
 Use @supports
 Apply background effect with "backdrop-filter"
 Use "aria-selected", "role", and "aria-controls"
+Write efficient JavaScript code
 
 ### Continued development
 
