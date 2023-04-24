@@ -4,6 +4,7 @@
     cursor: pointer;
     border: 0;
     background: transparent;
+    transition: transform 750ms ease-in-out;
 }
 
 .logo:hover,

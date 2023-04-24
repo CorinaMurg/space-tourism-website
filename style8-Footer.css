@@ -1,13 +1,23 @@
 footer { 
-    background: pink;
-    /* hsl( var(--clr-dark)); */
     height: 6rem;
     width: 100%;
     margin-top: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    border-top: 0.5px solid hsl( var(--clr-white) / .25);
+    background: hsl( var(--clr-dark) / 0.95);
+}
+
+@supports (backdrop-filter: blur(2.5rem)) {
+    footer {
+        background: hsl( var(--clr-white) / 0.04);
+        backdrop-filter: blur(2.5rem);
+    }
+}
+
+.crew footer {
+    margin-top: 0;
 }
 
 .attribution { 
@@ -16,18 +26,21 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    color: hsl( var(--clr-white));
+    font-size: 0.8rem;
 }
 
 .attribution p {
     padding: 0.3rem;
 }
 .attribution a { 
-    color: white; 
+    color: var(--clr-white); 
+    font-weight: 600;
     text-decoration: none;
 }
 
 .attribution a:hover { 
-    color: red; 
+    color: lightseagreen; 
 }
 
 
@@ -41,6 +54,10 @@ footer {
     footer { 
         height: 4rem;
         margin-top: 4rem;
+    }
+
+    .crew footer { 
+        margin-top: 0;
     }
 
     .attribution { 
