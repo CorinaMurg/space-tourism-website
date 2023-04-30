@@ -54,7 +54,7 @@
     background-color: transparent;
 }
 
-.menu-links > *:hover,
+.menu-links > *:hover
 .menu-links > *:focus {
     border-color: hsl( var(--clr-white) / .5);
 }

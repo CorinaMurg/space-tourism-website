@@ -110,6 +110,10 @@
     .destination {
         background-image: url(./assets/destination/background-destination-desktop.jpg);
     }
+
+    .tab-list {
+        align-self: end;
+    }
     
     .grid-container--destination {
         grid-template-columns: 1fr 1rem 1fr;
