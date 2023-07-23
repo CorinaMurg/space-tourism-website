@@ -43,6 +43,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - JavaScript
+- A11y 
 
 
 ### What I learned
