@@ -1,43 +1,20 @@
-# Frontend Mentor - Space tourism website solution
+# Space Tourism Website
 
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+This is my a solution to the [Space Tourism challenge by Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). 
 
 
+### Requirements
+My  goal was to build the site to match the figma design provided by Frontend Mentor.
 
-## Overview
-
-### The challenge
-
-Users should be able to:
-
+I had to make sure that users can experience the following:
 - View the optimal layout for each of the website's pages depending on their device's screen size
 - See hover states for all interactive elements on the page
 - View each page and be able to toggle between the tabs to see new information
 
+## Teachnical details
 
-### Links
-
-- Solution URL: 
-- Live Site URL: https://corina-murg-space-tourism-website.netlify.app/technology.html
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
+I built the website using
+- Semantic HTML5
 - CSS custom properties
 - Flexbox
 - CSS Grid
@@ -47,34 +24,21 @@ Users should be able to:
 
 
 ### What I learned
-
-Extensive use of variables for color, font-size, line-height, letter-spacing, and font-families
-Create responsive margins using the "clamp" function
-Use @supports
-Apply background effect with "backdrop-filter"
-Use "aria-selected", "role", and "aria-controls"
-Write efficient JavaScript code
-
-### Continued development
-
-Continue learning about the use of pictures/images and appropriate CSS code for styling them.
-
+To be able to complete this project, I learned a range of new skills:
+- Extensive use of variables for color, font-size, line-height, letter-spacing, and font-families
+- Create responsive margins using the "clamp" function
+- Use @supports
+- Apply background effect with "backdrop-filter"
+- Use "aria-selected", "role", and "aria-controls"
 
 ### Useful resources
 
 Book: "Using SVG with CSS3 & HTML5" (Publisher: O'Reilly)- This is an amazing book which helped me understand working with SVG. 
 
+### Live site and snapshot
 
-## Author
-Corina Murg
+Live site: [Corina's Space Tourism Website](https://corina-space-tourism.netlify.app/)
+<br>
 
-- Website - https://github.com/Cor-Ina
-- Frontend Mentor - @Cor-Ina: https://www.frontendmentor.io/profile/Cor-Ina
-- LinkedIn - https://www.linkedin.com/in/corinamurg/
-- Twitter - https://twitter.com/corinamurg
-
-## Acknowledgments
-
-I am grateful for the guidance provided by Kevin Powell @Scrimba. I have mastered the items listed under 
-the "What I Learned" section due to his thorough approach in explaining every bit of code. 
+![Screenshot of Space Tourism Europa page. Shows photo and details about the planet](https://github.com/CorinaMurg/space-tourism-website/assets/115652409/a25bffac-4989-4bb8-8d8b-fa9529d56a48)
 
